@@ -24,23 +24,31 @@ header {
     width: 100%;
     background: transparent !important;
     position: absolute;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 .logo{
     float: left;
     color: var(--text-color);
     font-size: 2rem;
     padding: .4em;
+    display: flex;
+    justify-content: flex-start;
 }
 nav{
     text-align: center;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 nav a {
     display: inline-block;
     padding: 1em 2em;
     text-decoration: none !important;
     color:var(--text-color) !important;
+}
+
+nav ul{
+    display: flex;
 }
 
 .banner {
@@ -72,12 +80,16 @@ main {
 
 .sideleft {
     width: 30%;
-    float: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .sideright {
     width: 60%;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .btn {
@@ -88,7 +100,8 @@ main {
 
 .box {
     width: 33%;
-    float: left;
+    display: flex;
+    flex-direction: row;
     padding: 2em;
     text-align: center;
     color:var(--text-color)
@@ -100,4 +113,22 @@ footer{
     width: 100%;
     padding: 2em;
     text-align: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+}
+.three{
+    display: flex;
+    flex-direction: column;
 }
